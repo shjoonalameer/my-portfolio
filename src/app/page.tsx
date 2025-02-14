@@ -1,6 +1,8 @@
 'use client';
 
 import './globals.css';
+import '../styles/globals.css'; // Ensure this path is correct
+
 import Image from 'next/image';
 
 export default function Home() {
