@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   output: "export",
-  basePath: "/my-portfolio", // Must match your GitHub repo name
-  assetPrefix: "/my-portfolio/", // Ensures CSS and assets load correctly
+  basePath: isProd ? "/my-portfolio" : "", // Only apply for GitHub Pages
+  assetPrefix: isProd ? "/my-portfolio/" : "", // Only apply for GitHub Pages
   images: {
     unoptimized: true,
   },

@@ -1,9 +1,8 @@
 'use client';
 
 import './globals.css';
-import '../styles/globals.css'; // Ensure this path is correct
 
-import Image from 'next/image';
+/*import Image from 'next/image';*/
 
 export default function Home() {
   return (
@@ -20,13 +19,8 @@ export default function Home() {
       {/* Main Content */}
       <div className="content">
         <div className="logoSection">
-          <Image
-            src="/mylogo2.png"  
-            alt="Logo"
-            width={550}
-            height={340}
-            className="logo"
-          />
+        <img src="/my-portfolio/mylogo2.png" alt="Logo" className="logo" width="550" height="340" />
+
           <h1>Shjoon Binalameer</h1>
           <p className="title">Information Technology</p>
         </div>
